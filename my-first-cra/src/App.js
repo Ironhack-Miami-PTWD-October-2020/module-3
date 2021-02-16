@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import User from "./components/User";
+import User from "./components/User"; // 🚨🚨 must import component to use it 🚨🚨
 
 const statement = <h1>Hello there, PTWD 10/2020 ♥️</h1>;
 
@@ -21,26 +21,18 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         {statement}
-
         <h3>
           hi, {ironhacker.firstName}. how's {ironhacker.course}?
         </h3>
-
         <h4> {capitalizeFirstLetter()} </h4>
-
         <hr />
-
         <h4>
           {firstName.toUpperCase()} is attending {course.toUpperCase()}
         </h4>
-
         <hr />
-
         <img src={logo} alt='react logo' width='200' />
-
         <hr />
-
-        <User />
+        <User /> {/* 🚨🚨 use component as a self-closing tag unless it will receive children */}
       </header>
     </div>
   );

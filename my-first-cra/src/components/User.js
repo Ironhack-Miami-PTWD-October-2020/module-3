@@ -14,4 +14,5 @@ class User extends Component {
   }
 }
 
+// 🚨🚨 must export the component in order to use it somewhere else 🚨🚨
 export default User;
