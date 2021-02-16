@@ -18,6 +18,8 @@ function capitalizeFirstLetter() {
 
 function App() {
   return (
+    // 🚨🚨 everything needs to be wrapped up with one tag 🚨🚨
+    // in this case, we used the <div></div> tag
     <div className='App'>
       <header className='App-header'>
         {statement}
