@@ -15,7 +15,7 @@ class LikeButton extends React.Component {
     return (
       <div>
         <button onClick={this.handleLikeStatus}>{(this.state.liked && "Unlike") || "Like"}</button>
-        {this.state.liked && <div>Thanks for liking me!</div>}
+        {this.state.liked && <div>Thanks for liking me! 🎻</div>}
       </div>
     );
   }

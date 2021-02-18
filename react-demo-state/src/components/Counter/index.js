@@ -1,5 +1,8 @@
 import React from "react";
 
+// STATE CAN LIVE ONLY INSIDE CLASS COMPONENT
+// later when you learn about hooks you will see that this is not 100% true, but for now take it as truthy
+
 class Counter extends React.Component {
   //   constructor() {
   //     super();
@@ -8,6 +11,7 @@ class Counter extends React.Component {
   //     };
   //   }
 
+  // ✅ state is always object
   state = {
     count: 0
   };
@@ -17,6 +21,7 @@ class Counter extends React.Component {
 
     // this.state.count ++; 🚨🚨🚨 never mutate state directly
 
+    // to make sure state doesn't get mutated, use setState() method when updating the state
     this.setState({
       count: this.state.count + 1
     });
